@@ -26,13 +26,14 @@ int main(int argc, char** argv) {
 
   for (auto text_array : texts) {
     SmartString smart_string(text_array);
-    assert(smart_string.length() == strlen(text_array));
-    std::cout << "." << std::flush;
-    assert(smart_string.length() == SmartString(smart_string).length());
-    std::cout << "." << std::flush;
     assert(smart_string == text_array);
     std::cout << "." << std::flush;
-    assert(smart_string == SmartString(smart_string));
+    assert(smart_string.length() == strlen(text_array));
+    std::cout << "." << std::flush;
+    SmartString copy_string(smart_string);
+    assert(smart_string == copy_string);
+    std::cout << "." << std::flush;
+    assert(smart_string.length() == copy_string.length());
     std::cout << "." << std::flush;
   }
 
