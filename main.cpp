@@ -4,7 +4,7 @@ Email  :      waqar.saleem@sse.habib.edu.pk
 File   :      main.cpp
 Date   :      21 Oct 2018
 
-Tests SmartString its implementation as described in Assignment 5 of CS 224 OOP, Fall 2018.
+Tests the implementation of SmartString as described in Assignment 5 of CS 224 OOP, Fall 2018.
 
 Uses auto which requires c++11.
 *******************************************************************************/
